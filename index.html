@@ -17,8 +17,18 @@
     <meta name="msapplication-config" content="./favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="mail@jackkimmins.com">
+    <meta property="og:url" content="https://jackkimmins.com/">
+    <meta property="og:description" content="Jack Kimmins - University Student, Software Engineer and Web Developer">
+    <meta property="og:image" content="https://jackkimmins.com/img/MetaImage.png">
+    <meta property="og:image:secure_url" content="https://jackkimmins.com/img/MetaImage.png">
+    <meta property="og:image:width" content="942">
+    <meta property="og:image:height" content="630">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -80,7 +90,7 @@
             <h2 data-aos="fade-up">Jack Kimmins</h2>
             <h3 data-aos="fade-up">I've worked with <span id="workedWith"></span></h3>
             <p data-aos="fade-up">I am a University Student, Software Engineer and Web Developer based in the Southwest of England. Presently, I am striving to obtain a first-class honours degree in Computing, enabling me to progress to postgraduate education.</p>
-            <a data-aos="fade-up" class="btn btn-primary mt-4 shadow-sm" href="#projects">View my Projects</a>
+            <a data-aos="fade-up" class="btn mt-4 shadow-sm" href="#projects">View my Projects</a>
         </section>
 
         <section class="about-me p-4 p-md-0" id="about">
@@ -92,8 +102,8 @@
                     </div>
                     <div class="col-md-8 col-md-1">
                         <div class="text pt-4 pt-md-0">
-                            <p data-aos="fade-up">Hello, my name is Jack Kimmins. I am passionate about building things and, more importantly, finding innovative ways to solve existing problems. Throughout the years, the world of computing has always inspired me due to the vast variety and the endless possibilities from every unique area of the subject.</p>
-                            <p data-aos="fade-up">However, my primary interest in computing would certainly be programming/scripting. I gain great satisfaction from creating desktop and web applications, linking them with a database and designing beautiful UIs to complement their backends. A few of my favourite ventures are listed below in the projects segment.</p>
+                            <p data-aos="fade-up">Hello, my name is <strong>Jack Kimmins</strong>. I am passionate about building things and, more importantly, finding innovative ways to solve existing problems. Throughout the years, the world of computing has always inspired me due to the vast variety and the endless possibilities from every unique area of the subject.</p>
+                            <p data-aos="fade-up">However, my primary interest in computing would certainly be programming/scripting. I gain great satisfaction from creating desktop and web applications, linking them with a database and designing beautiful UIs to complement their backends. A few of my favourite ventures are listed below in the <a href="#projects">projects segment</a>.</p>
                             <p data-aos="fade-up">After graduating with a degree in Computing, I aim to acquire a master's degree in Computer Science and to continue my own endeavours to learn more about this fantastic subject, both in my personal time and in different work placements throughout the coming years.</p>
                             <p data-aos="fade-up">Here are a few technologies I am the most familiar with:</p>
                         </div>
@@ -312,10 +322,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="d-flex justify-content-center">
-                <button data-aos="fade-up" class="btn btn-primary">Show More</button>
-            </div>
         </section>
 
         <section class="photography p-4 p-md-0" id="photography">
@@ -327,8 +333,10 @@
         <section class="contact p-md-5 d-flex justify-content-center align-items-center flex-column text-center" id="contact">
             <h4 data-aos="fade-up">Get In Touch</h4>
             <p data-aos="fade-up">Thank you for showing an interest in me, despite not presently looking for new employment opportunities; my email is always available.</p>
-            <a data-aos="fade-up" class="btn btn-primary" href="mailto:mail@jackkimmins.com">Send an Email</a>
+            <a data-aos="fade-up" class="btn" href="mailto:mail@jackkimmins.com">Send an Email</a>
         </section>
+
+        <footer data-aos="fade-up">&copy; Jack Kimmins <script>document.write(new Date().getFullYear())</script> • All rights reserved.</footer>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
