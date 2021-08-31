@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Kimmins</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1e033e">
+    <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div class="social-media-sidebar" data-aos="fade-right">
+        <div class="sidebar-content">
+            <a href="https://github.com/workingPlock" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://stackoverflow.com/" target="_blank">
+                <i class="fa fa-stack-overflow"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="quick-links-footer">
+        <a href="https://github.com/workingPlock" target="_blank" data-toggle="tooltip" title="View my GitHub">workingPlock <i class="fa fa-github"></i></a>
+        <a href="mailto:mail@jackkimmins.com" data-toggle="tooltip" title="Click to send me an email">mail@jackkimmins.com <i class="fas fa-at"></i></a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img data-src="./img/JK.svg" alt="" width="30" height="24" class="d-inline-block align-text-top me-2">
+                Jack Kimmins
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#cover">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-lg">
+        <section class="hero d-flex flex-column align-items-start justify-content-center p-4 p-md-5 p-xl-0" id="cover">
+            <h1 data-aos="fade-up">Hello, my name is</h1>
+            <h2 data-aos="fade-up">Jack Kimmins</h2>
+            <h3 data-aos="fade-up">I've worked with <span id="workedWith"></span></h3>
+            <p data-aos="fade-up">I am a University Student, Software Engineer and Web Developer based in the Southwest of England. Presently, I am striving to obtain a first-class honours degree in Computer Science, enabling me to progress to postgraduate education.</p>
+            <a data-aos="fade-up" class="btn btn-primary mt-4 shadow-sm" href="#projects">View my Projects</a>
+        </section>
+
+        <section class="about-me p-4 p-md-0" id="about">
+            <h4 class="mb-4 section-title" data-aos="fade-up">About Me</h4>
+            <div class="grid">
+                <div class="row">
+                    <div class="col-md-4 col-md-1">
+                        <img data-aos="fade-up" data-src="./img/Me.png" class="img-thumbnail w-100" alt="Picture of Jack (Headshot)">
+                    </div>
+                    <div class="col-md-8 col-md-1">
+                        <div class="text pt-4 pt-md-0">
+                            <p data-aos="fade-up">Hello, my name is Jack Kimmins. I am passionate about building things and, more importantly, finding innovative ways to solve existing problems. Throughout the years, the world of computing has always inspired me due to the vast variety and the endless possibilities from every unique area of the subject.</p>
+                            <p data-aos="fade-up">However, my primary interest in computing would certainly be programming/scripting. I gain great satisfaction from creating desktop and web applications, linking them with a database and designing beautiful UIs to complement their backends. A few of my favourite ventures are listed below in the projects segment.</p>
+                            <p data-aos="fade-up">After graduating with a degree in Computing, I aim to acquire a master's degree in Computer Science and to continue my own endeavours to learn more about this fantastic subject, both in my personal time and in different work placements throughout the coming years.</p>
+                            <p data-aos="fade-up">Here are a few technologies I am the most familiar with:</p>
+                        </div>
+
+                        <div class="technologies row" data-aos="fade-up">
+                            <div class="col">
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>PHP (v7+)</li>
+                                    <li>C# (.NET Core)</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li>HTML5/CSS3</li>
+                                    <li>C++</li>
+                                    <li>Bootstrap (v4+)</li>
+                                    <li>Windows Networking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-projects p-4 p-md-0" id="projects">
+            <h4 class="mb-4 section-title" data-aos="fade-up">My Projects</h4>
+
+            <figure class="text-center" data-aos="fade-up">
+                <blockquote class="blockquote">
+                    <p>One of the best ways to learn anything is to teach yourself</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-1">
+                    <cite title="Source Title">Giles Rich</cite>
+                </figcaption>
+            </figure>
+
+            <div class="grid p-0 p-md-4">
+                <div class="row">
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/chatterrific.svg" alt="Chatterrific Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>Chatterrific</h4>
+                            <span>Chatterrific is an instant messaging platform started back in 2018. It is available in both a downloadable C# desktop application and as an online PHP web application. I have created several distinct versions of the platform over the years, acting as a sort of playground as I develop new skills and abilities in application development.</span>
+                                
+                            <div class="technologies">
+                                <span>C#</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML5</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/arkzoo.png" alt="Noah's Ark Zoo Farm Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>Noah's Ark Zoo Farm</h4>
+                            <span>During my second year of university, I worked in a team to design and build a new website for Noah’s Ark Zoo Farm, a local zoo west of Bristol. This is one of the largest websites that I have made to date, requiring countless hours of work over an expansive period.</span>
+                                
+                            <div class="technologies">
+                                <span>HTML5</span>
+                                <span>CSS</span>
+                                <span>PHP</span>
+                                <span>WordPress</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/JCODE.png" alt="JCODE Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>jCode</h4>
+                            <span>jCode was originally designed as an online text hosting service for sharing snippets of code. It can support numerous programming and scripting languages and makes saving, sharing, and reviewing code easy. I then developed it further by making it into an education platform for other developers.</span>
+    
+                            <div class="technologies">
+                                <span>PHP</span>
+                                <span>JavaScript</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/JURL.png" alt="JURL Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>JURL</h4>
+                            <span>JURL is a free customisable URL redirection service, with detailed tracking/reporting of requests that are forwarded using JURL. Native support was also added, enabling it to function similarly to Google Analytics.</span>
+                                
+                            <div class="technologies">
+                                <span>PHP</span>
+                                <span>HTML5</span>
+                                <span>MySQL</span>
+                                <span>Google Charts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/NOC.png" alt="NOC Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>Network Operations Centre (NOC)</h4>
+                            <span>NOC is a Remote Monitoring and Management (RMM) software suite designed for monitoring and management of networked computers from a remote location.</span>
+                                
+                            <div class="technologies">
+                                <span>C#</span>
+                                <span>WebSockets</span>
+                                <span>Active Directory</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/ICN.png" alt="ICN Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>Isolated Computer Network</h4>
+                            <span>I volunteered to create, manage, and maintain my college’s isolated computer network for use in our cyber and networking lessons.</span>
+                                
+                            <div class="technologies">
+                                <span>Active Directory</span>
+                                <span>DNS</span>
+                                <span>Hyper-V</span>
+                                <span>Group Policy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/360.png" alt="360 Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>360</h4>
+                            <span>360 is a panorama photograph viewer that I designed and developed to showcase my personal 360 images. It can read the EXIF metadata of uploaded images to automatically determine the picture's location, when it was taken etc. and display this information on the user's screen.</span>
+                                
+                            <div class="technologies">
+                                <span>PHP 8</span>
+                                <span>MySQL</span>
+                                <span>HTML5</span>
+                                <span>EXIF</span>
+                                <span>REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/offendermetre.png" alt="Offendermetre Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>Offendermetre</h4>
+                            <span>The Offendermetre is my implementation of a profanity filter. It automatically censors offensive words or phrases in a given text. Due to the Scunthorpe Problem, standard word filters are not completely fool proof. However, my implementation uses machine learning and can tackle some of the hardest phrases to solve, including misspellings and borderline cases.</span>
+                                
+                            <div class="technologies">
+                                <span>C#</span>
+                                <span>ML.NET</span>
+                                <span>Sentiment Classification</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div data-aos="fade-up" class="project h-100">
+                            <header>
+                                <img data-src="./img/project-icons/jtest.png" alt="jTest Logo">
+                                <a href="https://chatterrific.me"><img src="./img/openProject.svg" title="Learn More" alt="Learn More Icon"></a>
+                                <a href="https://jCode.stablenetwork.uk/" target="_blank"><img src="./img/openSite.svg" title="Open Site" alt="Open Site Icon"></a>
+                            </header>
+    
+                            <h4>jTest</h4>
+                            <span>jTest is an integrated reinforcement learning platform designed to promote learning in a fun and competitive manner. Reinforcing an understanding of a particular subject enables students to become more successful in real-world situations. This is done by testing students on teacher defined questions and rewarding them with jPoints for correct answers and deducting them for incorrect answers.</span>
+                                
+                            <div class="technologies">
+                                <span>PHP</span>
+                                <span>Bootstrap</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button data-aos="fade-up" class="btn btn-primary">Show More</button>
+            </div>
+        </section>
+
+        <section class="photography p-4 p-md-0" id="photography">
+            <h4 class="mb-4 section-title" data-aos="fade-up">Contact Me</h4>
+          
+            
+        </section>
+
+        <section class="contact p-md-5 d-flex justify-content-center align-items-center flex-column text-center" id="contact">
+            <h4 data-aos="fade-up">Get In Touch</h4>
+            <p data-aos="fade-up">Thank you for showing an interest in me, despite not presently looking for new employment opportunities; my email is always available.</p>
+            <a data-aos="fade-up" class="btn btn-primary" href="mailto:mail@jackkimmins.com">Send an Email</a>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/eb87865935.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.lazy.min.js"></script>
+    <script src="./js/typeit.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

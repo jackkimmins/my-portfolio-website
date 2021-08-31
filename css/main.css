@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@200;500&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a192f;
+    background: linear-gradient(to left top, #19033d, #4e0044, #7c003e, #a0002c, #b52f09);
+    background-size: cover;
+    color: white;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+    counter-reset: section;
+}
+
+p, h1, h2, h3, h4 {
+    text-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+.social-media-sidebar {
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.section-title::before {
+    position: relative;
+    counter-increment: section;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: rgb(245, 181, 62);
+    font-weight: 400;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-media-sidebar>.sidebar-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media-sidebar a {
+    width: 75px;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+
+.social-media-sidebar a:hover {
+    transform: scale(1.2);
+}
+
+.quick-links-footer {
+    position: fixed;
+    margin: 25px;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
+
+.quick-links-footer a {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(10, 25, 47, 0);
+    backdrop-filter: blur(20px);
+    z-index: 15;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.nav-link a {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    text-underline-offset: 0.3em;
+    text-decoration: underline;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+}
+
+.hero h1, .hero h2, .hero h3 {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size: clamp(14px, 5vw, 16px);
+}
+
+.hero h2 {
+    font-size: clamp(40px, 8vw, 80px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+}
+
+.hero h3 {
+    font-size: clamp(10px, 5vw, 30px);
+    line-height: 0.5;
+    letter-spacing: 0.02em;
+}
+
+.hero p {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+.hero .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.about-me, .contact {
+    margin: 0px auto;
+    margin-bottom: 8vh;
+    padding: 100px 0px;
+    max-width: 900px;
+}
+
+.about-me .text {
+    font-size: 0.9em;
+    margin: 0px 30px 15px 0px;
+}
+
+.about-me .technologies {
+    font-size: 0.9em;
+}
+
+.blockquote > p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+}
+
+.my-projects {
+    margin-bottom: 8vh;
+}
+
+.my-projects .col {
+    padding: 10px;
+}
+
+.project {
+    -webkit-transition: -webkit-transform .5s ease;
+    -moz-transition: -moz-transform .5s ease;
+    transition: transform .5s ease;
+    vertical-align: top;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 18px;
+}
+
+.project:hover {
+    -webkit-transition: -webkit-transform .5s ease;
+    -moz-transition: -moz-transform .5s ease;
+    transition: transform .5s ease;
+    background-color: rgba(255, 0, 0, 0.2);
+    -moz-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+
+.project img {
+    width: 96px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.project a img {
+    width: 28px;
+    filter: invert(1);
+}
+
+.project a {
+    float: right;
+    left: 5px;
+    margin-left: 10px;
+}
+
+.project h4 {
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.project>span {
+    margin-top: 0;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.technologies span {
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.contact {
+    position: relative;
+    min-height: 70vh;
+}
+
+.contact p {
+    padding: 0px 80px;
+}
+
+.contact h4 {
+    font-size: 2.5em;
+}
+
+@media (min-width: 1400px) {
+    main {
+        max-width: 1050px!important;
+    }
+}
+
+@media (max-width: 1600px) {
+    .social-media-sidebar, .quick-links-footer {
+        position: absolute;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero p, .hero button {
+        display: none;
+    }
+
+    .technologies {
+        max-width: 100%;
+    }
+
+    .contact p {
+        padding: 0px 0px;
+    }
+}
